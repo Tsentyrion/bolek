@@ -1,7 +1,7 @@
 FROM nginx:latest
 
-ADD . /usr/share/nginx/html/bolek
-WORKDIR /usr/share/nginx/html/bolek
+ADD . /usr/share/nginx/html
+WORKDIR /usr/share/nginx/html
 RUN cat .env>version.html
 RUN echo $(date)>>version.html
 
